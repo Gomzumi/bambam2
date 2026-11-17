@@ -229,7 +229,7 @@ class DRTVIE(InfoExtractor):
             'id': video_id,
             'formats': formats,
             'subtitles': subtitles,
-                        'season_id': self._search_regex(
+            'season_id': self._search_regex(
                 r'_(\d+)$', traverse_obj(item, ('season', 'path')), 'season id', default=item.get('seasonId')),
             **traverse_obj(item, {
                 'title': 'title',
